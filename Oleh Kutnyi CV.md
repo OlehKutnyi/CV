@@ -1,14 +1,14 @@
 # Oleh Kutnyi - Junior Data Analyst
 
-## Contact inforamtion
-- 📞 +380 (67) 67 986 02
+## ☎️Contact inforamtion
+-  +380 (67) 67 986 02
 - Telegram @OlehKutnyi
 - e-mail okutnyi@gmail.com
 
-## Summary
+## 📄Summary
 Hi! Welcome to my GitHub here you can find my resume and projects. Currently, I’m a student at Kyiv School of Economics(KSE). I want to make a career of data/product analyst. Unfortunately, I don’t have any real working experience in the field, however, I’ve done several projects at university (R, regression analysis, econometrics) and created a simple project in SQL & Tableau, particularly for this repository. 
 
-## Key Skills
+## 🎯Key Skills
 - MS Excel
 - SQL
 - R
@@ -16,14 +16,14 @@ Hi! Welcome to my GitHub here you can find my resume and projects. Currently, I�
 - Econometrics/Statistics (OLS, 2SLS, Probit, Logit regression)
 - Python, Git
 
-## Education
+## 📚Education
 - **Kyiv School of Economics (KSE)** - [Business Economics]
 - **Several courses for data analytics**
   - Coursera
   - PlanetScale
   - Genesis Analytics Guide
 
-## Projects
+## 💻Projects
 ### Toys sales (SQl)
 - SQL
 - Tableau
