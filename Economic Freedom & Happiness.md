@@ -1,9 +1,9 @@
-#Economic Freedom and Happiness
+# Economic Freedom and Happiness
 
-##Description
+## Description
 Economists believe that economic freedom (EF) has a strong positive effect on subjective well-being (happiness). I decided to dig deeper and discover whether this relationship depends on a particular country. Specifically, I focus on geopolitical groups and development levels. I hoped that the the effect of increasing EF will have a stronger effect in Western Europe than in post-Soviet countries because of their history. 
 
-##Variables
+## Variables
 Economic freedom refers to the ability of individuals and businesses to make economic choices and decisions without government intervention or excessive restrictions. It is often used to describe the degree to which an economy allows for voluntary and market-driven economic activities to take place. Scale of measurement 1 to 100.
 
 In turn, the happiness index is subjective, respondents are asked to rate their life satisfaction on a 1 to 10 scale.
@@ -12,7 +12,7 @@ The development level has six categories: post-Soviet, Western Europe, Sub-Sahar
 
 Development level has three categories developed, developing, and least developed.
 
-##Hypothesis and model
+## Hypothesis and model
 H1:The impact of economic freedom on happiness in Western Europe is stronger than in other countries.
 H2: The impact of economic freedom on happiness in highly developed countries is stronger than in developing and least developed countries. 
 H3: Geopolitical region has a strong effect on the relationship between economic freedom and happiness. 
@@ -22,8 +22,8 @@ Happiness = β0 + β1(Economic Freedom) + β2(Level of Development) + β3(Geopol
 
 This model allows to assess how economic freedom impacts happiness, whether the level of development and geopolitical region have independent effects, and how the relationship between economic freedom and happiness varies across different levels of development and geopolitical culture contexts.
 
-##Creating the data set
-'''R
+## Creating the data set
+''' R
 economic_freedom_21only <- subset(economic_freeedom_2021,
                                   economic_freeedom_2021$`Index Year` == 2021)
 economic_freedom_21only <- economic_freedom_21only %>%
