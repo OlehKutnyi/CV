@@ -89,6 +89,71 @@ selected_data <- selected_data %>%
   mutate(regional_indicator = ifelse(regional_indicator %in% regioanl_indicators_other, "Other", regional_indicator))
 ```
 
+## Some plots to feel the data
+
+```R
+plot_development <- ggplot(selected_data, aes(x = econ_freedom_index, y = happiness_index, color = DevelopmentLevel)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "blue") +
+  labs(
+    x = "Economic Freedom Index",
+    y = "Happiness Index",
+    title = "Scatter Plot with Regression Line"
+  )
+
+plot_region <- ggplot(data = selected_data,  aes(x = econ_freedom_index, y = happiness_index, color = regional_indicator)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "blue") +
+  labs(
+    x = "Economic Freedom Index",
+    y = "Happiness Index",
+    title = "Scatter Plot with Regression Line (Excluding 'other' Region)"
+  )
+```
+<img width="1440" alt="Знімок екрана 2024-01-18 о 16 04 06" src="https://github.com/OlehKutnyi/CV/assets/150731232/92953e41-2827-40a4-93e9-9a3d87855d9b">
+
+<img width="1440" alt="Знімок екрана 2024-01-18 о 16 04 22" src="https://github.com/OlehKutnyi/CV/assets/150731232/ef4647d6-7bb6-424b-bd58-0ea4df42bfa4">
+
+
+Clearly, the developed countries are happier (which is pretty obvious) and Western Europe is happier than Africa, which is basically the same statement. Nothing new but now I have more trust in my dataset and it once again proved the positive relationship between EF and happiness.
+
+
+## Analysis
+
+The analysis will begin with the simple model without interactions.
+
+```R
+model_no_interactions <- lm(happiness_index ~  econ_freedom_index + DevelopmentLevel+ regional_indicator, data = selected_data)
+summary(model_no_interactions)
+```
+<img width="705" alt="Знімок екрана 2024-01-18 о 16 14 30" src="https://github.com/OlehKutnyi/CV/assets/150731232/95de123c-3432-44f7-ad47-26325b9fac35">
+
+All variables have at least one statistically significant category (å = 0.5). Indeed both EF and development level have a positive effect on happiness. (Remember the numbers are so small because of the scale EF: 1-100; Happiness:1-10)
+
+I will not provide a very detailed analysis here and move to the final model instead. But here is the screen shot of some other models.
+
+<img width="470" alt="Знімок екрана 2024-01-18 о 16 24 21" src="https://github.com/OlehKutnyi/CV/assets/150731232/7f68426e-2d0b-41b9-8622-66a32f33de99">
+
+
+**Final model**
+
+```R
+interact_all_model <- lm(happiness_index ~ econ_freedom_index +  DevelopmentLevel+ regional_indicator +  
+                           econ_freedom_index : regional_indicator + econ_freedom_index : DevelopmentLevel, data = selected_data)
+```
+Unfortunately, the majority of variables are not statistically significant (model 3, screenshot above). But it is still possible to draw some conclusions from the models above. 
+
+When including interactions between economic freedom and regions the result suggests that economic freedom is very important for happiness in Western Europe, if compared to other regions. The interaction term is positive and statistically significant. This suggests that the positive impact of economic freedom on happiness is stronger for West European countries than for any other region of the globe.
+
+In the second model, I did not receive any evidence suggesting that the positive effect of economic freedom depends on the level of development in my sample. This suggests that economic freedom is equally important for all countries regardless of their development level. 
+
+When including interactions for both the geopolitical region and development level, the results do not change. The positive effect still does not depend on the level of development but preserves its variation across regional groups. Similar to the results in model 1, the impact of economic freedom on happiness is stronger for Western Europe than for other countries. 
+To sum up, economic freedom is important for happiness in every country, in other words, there is a strong positive relationship between both variables. However, this effect does not depend on the country’s development level but may depend on geopolitical classification.
+
+Despite some limitations and slightly controversial results, the analysis manages to prove two hypotheses (H1, H3) related to the regional effect. However, there is not enough evidence to accept H2 and H4, thus, one should conclude that there is no difference in the effect of economic freedom on happiness among countries with different levels of development.
+
+
+### In case you want this a paper with all details and references.
 
 
 
