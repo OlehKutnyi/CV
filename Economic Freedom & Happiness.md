@@ -23,7 +23,7 @@ Happiness = β0 + β1(Economic Freedom) + β2(Level of Development) + β3(Geopol
 This model allows to assess how economic freedom impacts happiness, whether the level of development and geopolitical region have independent effects, and how the relationship between economic freedom and happiness varies across different levels of development and geopolitical culture contexts.
 
 ## Creating the data set
-''' R
+```R
 economic_freedom_21only <- subset(economic_freeedom_2021,
                                   economic_freeedom_2021$`Index Year` == 2021)
 economic_freedom_21only <- economic_freedom_21only %>%
@@ -87,7 +87,7 @@ regioanl_indicators_other <- c("North America and ANZ", "Middle East and North A
 selected_data <- selected_data %>%
   mutate(regional_indicator = ifelse(regional_indicator %in% regional_indicators_asia, "Asia", regional_indicator))%>%
   mutate(regional_indicator = ifelse(regional_indicator %in% regioanl_indicators_other, "Other", regional_indicator))
-'''
+```
 
 
 
