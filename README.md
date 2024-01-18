@@ -24,9 +24,11 @@ Hi! Welcome to my GitHub here you can find my resume and projects. Currently, Iâ
   - Genesis Analytics Guide
 
 ## Projects
-### Toys sales (SQl, Tableau)
+### Toys sales (SQl)
+- SQL
+- Tableau
 
-
-### Economic freedom & Happiness (R, Regression analysis)
-
-
+### Economic freedom & Happiness (R)
+- R (analysis, visualisation and data preparation)
+- Regression analysis
+- This project was a part of a course at KSE. It focuses on an effect of economic freedom on happiness level among countries. This might not be directly related for your requirements, however, I hope it will be enough to show my R and statistical skills.
