@@ -32,3 +32,4 @@ Hi! Welcome to my GitHub here you can find my resume and projects. Currently, Iâ
 - R (analysis, visualisation and data preparation)
 - Regression analysis
 - This project was a part of a course at KSE. It focuses on an effect of economic freedom on happiness level among countries. This might not be directly related for your requirements, however, I hope it will be enough to show my R and statistical skills.
+- https://github.com/OlehKutnyi/CV/commit/82b4cb9af55d57b4c1d3fe7f17b98ea003ef2a69
