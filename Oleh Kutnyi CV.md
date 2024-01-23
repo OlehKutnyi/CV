@@ -28,7 +28,7 @@ Hi! Welcome to my GitHub here you can find my resume and projects. Currently, Iâ
 - SQL
 - Tableau
 
-### Economic freedom & Happiness (R)
+### [Economic freedom & Happiness (R)](https://github.com/OlehKutnyi/CV/blob/main/Economic%20Freedom%20%26%20Happiness.md)
 - R (analysis, visualisation and data preparation)
 - Regression analysis
 - This project was a part of a course at KSE. It focuses on an effect of economic freedom on happiness level among countries. This might not be directly related for your requirements, however, I hope it will be enough to show my R and statistical skills.
