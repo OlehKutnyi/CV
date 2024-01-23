@@ -74,3 +74,16 @@ ORDER BY TotalUnitsSold DESC;
 ```
 <img width="367" alt="Знімок екрана 2024-01-18 о 18 19 13" src="https://github.com/OlehKutnyi/CV/assets/150731232/c43451d7-780d-47b3-b4ed-40cd33a35276">
 
+I've also calculated the average revenue per store
+
+```SQL
+SELECT
+    Stores.StoreID,
+    Stores.Store_name,
+    CONCAT(Stores.store_location, " ", Stores.store_city) as store_full_location,
+    SUM(Sales.units * Products.product_price) / DATEDIFF(MAX(Sales.date), MIN(Sales.date)) * 30 as average_revenue_per_month
+FROM Stores
+RIGHT JOIN Sales ON Stores.StoreID = Sales.StoreID
+LEFT JOIN Products ON Sales.ProductID = Products.ProductID
+GROUP BY Stores.StoreID;
+```
