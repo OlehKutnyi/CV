@@ -24,7 +24,7 @@ Hi! Welcome to my GitHub here you can find my resume and projects. Currently, Iâ
   - Genesis Analytics Guide
 
 ## ðŸ’»Projects
-### Toys sales (SQl)
+### [Toys sales (SQl)] (https://github.com/OlehKutnyi/CV/blob/main/Economic%20Freedom%20%26%20Happiness.md)
 - SQL
 - Tableau
 
