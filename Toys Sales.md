@@ -1,5 +1,5 @@
 # Stores sales
-This project doesn't really have anything specific to discover. It is created to show some of my SQL and Tableau skills. The project is based on the dataset Maven Toys and their sales in different shops. The Schema consists of four tables: Products (product, product name, product category, product cost product price); Inventory (ProductID, StoreID, stock on hand); Stores (StoreID, store name, store city, store location, store open date); Sales(SaleID, date, StoreID, ProductID, units)
+This project doesn't really have anything specific to discover. It is created just to practice my SQL and Tableau skills. The project is based on the dataset Maven Toys and their sales in different shops. The Schema consists of four tables: Products (product, product name, product category, product cost product price); Inventory (ProductID, StoreID, stock on hand); Stores (StoreID, store name, store city, store location, store open date); Sales(SaleID, date, StoreID, ProductID, units)
 
 ## Querries
 
