@@ -1,7 +1,7 @@
 # Economic Freedom and Happiness
 
 ## Description
-Economists believe that economic freedom (EF) has a strong positive effect on subjective well-being (happiness). I decided to dig deeper and discover whether this relationship depends on a particular country. Specifically, I focus on geopolitical groups and development levels. I hoped that the the effect of increasing EF will have a stronger effect in Western Europe than in post-Soviet countries because of their history. 
+Economists believe that economic freedom (EF) has a strong positive effect on subjective well-being (happiness). I was curious whether this relationship is affected by the country's culture, which is the result of its history. I was especially interested in post-Soviet countries. The classical geopolitical groups like Western Europe, the Middle East and post-Soviet states are pretty good for this analysis. I also add the development level to the analysis. I hoped that the effect of increasing EF would have a stronger effect in Western Europe than in post-Soviet countries because of their history. 
 
 ## Variables
 Economic freedom refers to the ability of individuals and businesses to make economic choices and decisions without government intervention or excessive restrictions. It is often used to describe the degree to which an economy allows for voluntary and market-driven economic activities to take place. Scale of measurement 1 to 100.
@@ -141,7 +141,7 @@ I will not provide a very detailed analysis here and move to the final model ins
 interact_all_model <- lm(happiness_index ~ econ_freedom_index +  DevelopmentLevel+ regional_indicator +  
                            econ_freedom_index : regional_indicator + econ_freedom_index : DevelopmentLevel, data = selected_data)
 ```
-Unfortunately, the majority of variables are not statistically significant (model 3, screenshot above). But it is still possible to draw some conclusions from the models above. 
+Unfortunately, the majority of variables are not statistically significant (model 3, screenshot above). However, it is still possible to draw some conclusions from the models above. 
 
 When including interactions between economic freedom and regions the result suggests that economic freedom is very important for happiness in Western Europe, if compared to other regions. The interaction term is positive and statistically significant. This suggests that the positive impact of economic freedom on happiness is stronger for West European countries than for any other region of the globe.
 
