@@ -27,9 +27,10 @@ Hi! Welcome to my GitHub here you can find my resume and projects. Currently, Iâ
 ### [Toys sales (SQl)](https://github.com/OlehKutnyi/CV/blob/main/Economic%20Freedom%20%26%20Happiness.md)
 - SQL
 - Tableau
+- Analysing dataset about products, stores and sales. It consists of simple calculations like average revenue per month, total sales, net-profit or avg margins in different product categories.
 
 ### [Economic freedom & Happiness (R)](https://github.com/OlehKutnyi/CV/blob/main/Economic%20Freedom%20%26%20Happiness.md)
 - R (analysis, visualisation and data preparation)
 - Regression analysis
-- This project was a part of a course at KSE. It focuses on an effect of economic freedom on happiness level among countries. This might not be directly related for your requirements, however, I hope it will be enough to show my R and statistical skills.
+- This project was a part of a course at KSE. It focuses on the effect of economic freedom on happiness levels among countries. It involves constructing a regression model (OLS) with interactions.
 
