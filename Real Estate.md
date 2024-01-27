@@ -1,6 +1,6 @@
 # Real Estate (R)
 
-##Description
+## Description
 The project focuses on data preparation and making visualisations from the dataset about real estate in the US. It consists of:
 - Status (for sale / ready to build)
 - Price (in $ US dollars)
@@ -11,7 +11,7 @@ The project focuses on data preparation and making visualisations from the datas
 - House Size
 - There are more variables but the project will focus on those listed above.
 
-##Data preparation & cleaning
+## Data preparation & cleaning
 Downloading the data and libraries that will be used during work.
 ```R
 realtor_data <- read.csv("realtor-data.csv")
@@ -74,7 +74,7 @@ realtor_data_new <- realtor_data %>%
   mutate(price_per_sq_feet = price/house_size)
 ```
 
-##Visualisation
+## Visualisation
 
 **Histogram of house prices**
 ```R
