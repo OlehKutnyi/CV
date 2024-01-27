@@ -2,7 +2,7 @@
 
 ## ☎️Contact inforamtion
 -  +380 (67) 67 986 02
-- Telegram @OlehKutnyi
+- Telegram [@OlehKutnyi](https://t.me/OlehKutnyi)
 - e-mail okutnyi@gmail.com
 
 ## 📄Summary
