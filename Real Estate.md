@@ -46,12 +46,12 @@ unique(realtor_data$bath)
 ```R
 unique(realtor_data$state)
 unique(realtor_data$status)
-```
+
 unique(realtor_data$state)
 "Puerto Rico"    "Virgin Islands" "Massachusetts"  "Connecticut"    "New Hampshire"  "Vermont"       
 "New Jersey"     "New York"       "South Carolina" "Tennessee"      "Rhode Island"   "Virginia"      
 "Wyoming"        "Maine"          "Georgia"        "Pennsylvania"   "West Virginia" 
-
+```
 unique(realtor_data$status)
 "for_sale"       "ready_to_build"
 
