@@ -82,7 +82,7 @@ realtor_data_new %>%
 ```
 <img width="1440" alt="Знімок екрана 2024-01-27 о 17 41 56" src="https://github.com/OlehKutnyi/CV/assets/150731232/9d122b1b-6fb0-4768-b564-3adb17393207">
 
-**Relationship between price and size
+**Relationship between price and size**
 ```R
 realtor_data_new %>%
   ggplot(aes(house_size, price))+
@@ -90,6 +90,7 @@ realtor_data_new %>%
   geom_smooth(method = "lm")
 ```
 <img width="1440" alt="Знімок екрана 2024-01-27 о 17 43 21" src="https://github.com/OlehKutnyi/CV/assets/150731232/a4699960-9ca3-42fa-a4b1-8852135a766f">
+Clearly, there are still a lot of outliers and false values (very big houses with cheap prices). However, because I will not do a deep analysis this will be ok for visualisation purposes.
 
 **Average price of sq feet in each state**
 ```R
