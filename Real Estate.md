@@ -61,7 +61,6 @@ summary(realtor_data$price)
 This just proved the initial concern. Firstly, I'll delete all observations with the NA values, just as all variables that I won't use in this work. In addition, 99 bedrooms and 198 baths are considered to be an extreme event or more probably an error. Only homes with less than 10 bathrooms or bedrooms will be included in a new dataset  
 I also decided to create a new variable "price_per_sq_feet".
 
-This is pretty simple data cleaning it is better to consider techniques like IQR to remove the outliers.
 
 ```R
 realtor_data_new <- realtor_data %>% 
@@ -90,7 +89,30 @@ realtor_data_new %>%
   geom_smooth(method = "lm")
 ```
 <img width="1440" alt="Знімок екрана 2024-01-27 о 17 43 21" src="https://github.com/OlehKutnyi/CV/assets/150731232/a4699960-9ca3-42fa-a4b1-8852135a766f">
-Clearly, there are still a lot of outliers and false values (very big houses with cheap prices). So I'll avoid houses larger than 20k sq feet and more expensive than $2mil.
+Clearly, there are still a lot of outliers and false values (very big houses with cheap prices). So let's make a box and whisker plots for price and house size.
+<img width="1440" alt="Знімок екрана 2024-01-27 о 18 30 53" src="https://github.com/OlehKutnyi/CV/assets/150731232/a3ce07c5-8b98-47ae-8127-86d429f3df5e">
+<img width="1440" alt="Знімок екрана 2024-01-27 о 18 31 05" src="https://github.com/OlehKutnyi/CV/assets/150731232/0dbfc825-a198-4ca6-9da3-56cf21c3d158">
+
+Both look like there are a lot of outliers (not necessarily but all the dots might be considered outliers). So I'll get rid of them and continue with visualisations. I also want to check the amount of houses in each sate.
+
+**Number of houses in each state**
+```R
+realtor_data_new %>%
+  group_by(state) %>%
+  count(state, name = "number_of_houses") %>%
+  ggplot(aes(state, number_of_houses)) +
+  geom_col(fill = "blue", colour = "yellow") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))+
+  scale_y_continuous(labels = scales::comma)
+```
+<img width="1440" alt="Знімок екрана 2024-01-27 о 18 45 17" src="https://github.com/OlehKutnyi/CV/assets/150731232/e2ac6a6c-908e-42b6-ad2c-dd05218127ff">
+Looks like there is a lack of data for the Virgin Islands, West Virginia and Wyoming so I'll drop them.
+```R
+realtor_data_new <- realtor_data_new %>%
+  filter(house_size < 5000) %>%
+  filter(price < 1250000) %>%
+  filter(!(state %in% c("Virgin Islands", "West Virginia", "Wyoming")))
+```
 
 **Average price of sq feet in each state**
 ```R
@@ -102,7 +124,8 @@ price_per_feet <- realtor_data_new %>%
     theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))+
   scale_y_continuous(labels = scales::comma)
 ```
-<img width="1440" alt="Знімок екрана 2024-01-27 о 17 45 37" src="https://github.com/OlehKutnyi/CV/assets/150731232/7e3ef898-26dc-4e9f-8fe4-6cc6318e364b">
+<img width="1440" alt="Знімок екрана 2024-01-27 о 18 54 28" src="https://github.com/OlehKutnyi/CV/assets/150731232/6a84a7ac-3778-4b2c-af5f-5232a9e03b74">
+
 
 **Average house in each state**
 ```R
@@ -113,7 +136,8 @@ realtor_data_new %>%
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)) +
   labs(x = "State", y = "Average size of the house sold", title = "Average house size in different states")
 ```
-<img width="1440" alt="Знімок екрана 2024-01-27 о 17 47 15" src="https://github.com/OlehKutnyi/CV/assets/150731232/68ef5bbc-1558-4c03-baec-55a57dd2a5d6">
+<img width="1440" alt="Знімок екрана 2024-01-27 о 18 54 43" src="https://github.com/OlehKutnyi/CV/assets/150731232/e5d9becf-479d-4f4f-9d9a-df5b6970f920">
+
 
 **Total values of houses in state (top 5)**
 ```R
@@ -126,7 +150,8 @@ realtor_data_new %>%
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))+
   scale_y_continuous(labels = scales::comma)
 ```
-<img width="1440" alt="Знімок екрана 2024-01-27 о 17 49 51" src="https://github.com/OlehKutnyi/CV/assets/150731232/83d07626-a646-43d7-9041-d08135f6ab77">
+<img width="1440" alt="Знімок екрана 2024-01-27 о 18 55 08" src="https://github.com/OlehKutnyi/CV/assets/150731232/69185288-553b-43ab-bfd7-919222038fc2">
+
 
 ```R
 realtor_data_new %>%
@@ -145,7 +170,9 @@ realtor_data_new %>%
   guides(fill = guide_legend(title = "State")) +
   scale_y_continuous(labels = scales::percent_format())
 ```
-<img width="1440" alt="Знімок екрана 2024-01-27 о 17 51 24" src="https://github.com/OlehKutnyi/CV/assets/150731232/09ebf7c0-8e4f-4dde-99d2-4af74bf35bce">
+<img width="1440" alt="Знімок екрана 2024-01-27 о 18 55 31" src="https://github.com/OlehKutnyi/CV/assets/150731232/f7842a8e-8ed2-44b4-83dc-5cbfc61a647f">
+
+The dataset is of course not perfect and it is impossible to make a conclusion about a whole population. One may only draw conclusions about this specific sample. For example, the last char doesn't mean that the houses in Massachusetts are more expensive(you can check this above) or that more people live there. It's just there is more data from the Massachusets in this dataset. 
 
 
 
