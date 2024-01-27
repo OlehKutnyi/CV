@@ -35,3 +35,8 @@ Hi! Welcome to my GitHub here you can find my resume and projects. Currently, Iâ
 - Creating an academic research paper
 - Studies the effect of a countryâ€™s culture on the relationship between economic freedom and happiness.
 - [Link for the published paper](https://mpra.ub.uni-muenchen.de/119620/)
+
+### [Real Estate in USA (R)](https://github.com/OlehKutnyi/CV/blob/main/Real%20Estate.md)
+- R
+- Data preparation and visualisation
+- This project does not include any analysis. It completely focuses on data cleaning and, especially, visualisation on R.
