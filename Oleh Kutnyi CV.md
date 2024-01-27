@@ -30,7 +30,8 @@ Hi! Welcome to my GitHub here you can find my resume and projects. Currently, Iâ
 - Analysing the dataset about products, stores and sales. It consists of simple calculations like average revenue per month, total sales, net profit or average margins in different product categories.
 
 ### [Economic freedom & Happiness (R)](https://github.com/OlehKutnyi/CV/blob/main/Economic%20Freedom%20%26%20Happiness.md)
-- R (analysis, visualisation and data preparation)
-- Regression analysis
-- This project was a part of a course at KSE. It focuses on the effect of economic freedom on happiness levels among countries. It involves constructing a regression model (OLS) with interactions.
-
+- R (preparation, visualisation and analysing data)
+- Regression analysis (OLS)
+- Creating an academic research paper
+- Studies the effect of a countryâ€™s culture on the relationship between economic freedom and happiness.
+- [Link for the published paper](https://mpra.ub.uni-muenchen.de/119620/)
