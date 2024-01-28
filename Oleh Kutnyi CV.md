@@ -14,7 +14,8 @@ Hi! Welcome to my GitHub here you can find my resume and projects. Currently, Iâ
 - R
 - Tableau
 - Econometrics/Statistics (OLS, 2SLS, Probit, Logit regression)
-- Python, Git
+- Python(but not for data analysis)
+- Git
 
 ## ðŸ“šEducation
 - **Kyiv School of Economics (KSE)** - [Business Economics]
