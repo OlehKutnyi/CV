@@ -24,17 +24,17 @@ Hi! Welcome to my GitHub here you can find my resume and projects. Currently, I�
   - Genesis Analytics Guide
 
 ## 💻Projects
-### [Toys sales (SQl)](https://github.com/OlehKutnyi/CV/blob/main/Economic%20Freedom%20%26%20Happiness.md)
-- SQL
-- Tableau
-- Analysing the dataset about products, stores and sales. It consists of simple calculations like average revenue per month, total sales, net profit or average margins in different product categories.
-
 ### [Economic freedom & Happiness (R)](https://github.com/OlehKutnyi/CV/blob/main/Economic%20Freedom%20%26%20Happiness.md)
 - R (preparation, visualisation and analysing data)
 - Regression analysis (OLS)
 - Creating an academic research paper
 - Studies the effect of a country’s culture on the relationship between economic freedom and happiness.
 - [Link for the published paper](https://mpra.ub.uni-muenchen.de/119620/)
+
+### [Toys sales (SQl)](https://github.com/OlehKutnyi/CV/blob/main/Economic%20Freedom%20%26%20Happiness.md)
+- SQL
+- Tableau
+- Analysing the dataset about products, stores and sales. It consists of simple calculations like average revenue per month, total sales, net profit or average margins in different product categories.
 
 ### [Real Estate in USA (R)](https://github.com/OlehKutnyi/CV/blob/main/Real%20Estate.md)
 - R
