@@ -6,13 +6,13 @@
 - e-mail okutnyi@gmail.com
 
 ## 📄Summary
-Hi! Welcome to my GitHub here you can find my resume and projects. Currently, I’m a student at Kyiv School of Economics(KSE). Apart from economics, my studying in university was mainly connected to math and working with data. I had courses like Statistics & Probability, Regression Analysis, Econometrics, Data Preparation and Visualisation on R, etc. I am also a fan of the scientific data-driven approach in life and business; that's why I want to begin my career as a data analyst. Unfortunately, I don’t have any real working experience in the field, however, I’ve done several projects at university and created a simple project in SQL & Tableau, particularly for this repository. 
+Hi! Welcome to my GitHub here you can find my resume and projects. Currently, I’m a third-year student at Kyiv School of Economics(KSE). Apart from economics, my studying in university was mainly connected to math and working with data. I had courses like Statistics & Probability, Regression Analysis, Econometrics, Data Preparation and Visualisation on R, etc. I am also a fan of the scientific data-driven approach in life and business; that's why I want to begin my career as a data analyst. Unfortunately, I don’t have any real working experience in the field, however, I’ve done several projects at university and created a simple project in SQL & Tableau to show some of my skills. 
 
 ## 🎯Key Skills
 - MS Excel
 - SQL
-- R
 - Tableau
+- R
 - Econometrics/Statistics (OLS, 2SLS, Probit, Logit regression)
 - Python(but not for data analysis)
 - Git
