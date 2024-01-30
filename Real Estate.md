@@ -90,6 +90,23 @@ realtor_data_new %>%
 ```
 <img width="1440" alt="Знімок екрана 2024-01-27 о 17 43 21" src="https://github.com/OlehKutnyi/CV/assets/150731232/a4699960-9ca3-42fa-a4b1-8852135a766f">
 Clearly, there are still a lot of outliers and false values (very big houses with cheap prices). So let's make a box and whisker plots for price and house size.
+```R
+#boxplot dist of prices
+realtor_data_new %>%
+  ggplot(aes(price)) +
+  geom_boxplot(fill = "lightblue", color = "black") +
+  labs(title = "Distribution of Prices",
+       x = "Price") +
+  theme_minimal()
+
+#boxplot dist of size
+realtor_data_new %>%
+  ggplot(aes(house_size)) +
+  geom_boxplot(fill = "lightblue", color = "black") +
+  labs(title = "Distribution of Sizes",
+       x = "Size") +
+  theme_minimal()
+  ```
 <img width="1440" alt="Знімок екрана 2024-01-27 о 18 30 53" src="https://github.com/OlehKutnyi/CV/assets/150731232/a3ce07c5-8b98-47ae-8127-86d429f3df5e">
 <img width="1440" alt="Знімок екрана 2024-01-27 о 18 31 05" src="https://github.com/OlehKutnyi/CV/assets/150731232/0dbfc825-a198-4ca6-9da3-56cf21c3d158">
 
@@ -172,7 +189,7 @@ realtor_data_new %>%
 ```
 <img width="1440" alt="Знімок екрана 2024-01-27 о 18 55 31" src="https://github.com/OlehKutnyi/CV/assets/150731232/f7842a8e-8ed2-44b4-83dc-5cbfc61a647f">
 
-The dataset is of course not perfect and it is impossible to make a conclusion about a whole population. One may only draw conclusions about this specific sample. For example, the last char doesn't mean that the houses in Massachusetts are more expensive(you can check this above) or that more people live there. It's just there is more data from the Massachusets in this dataset. 
+The dataset is of course not perfect and it is impossible to make a conclusion about a whole population. One may only draw conclusions about this specific sample. For example, the last chart doesn't mean that the houses in Massachusetts are more expensive(you can check this above) or that more people live there. It's just there is more data from the Massachusets in this dataset. 
 
 
 
