@@ -90,6 +90,7 @@ realtor_data_new %>%
 ```
 <img width="1440" alt="Знімок екрана 2024-01-27 о 17 43 21" src="https://github.com/OlehKutnyi/CV/assets/150731232/a4699960-9ca3-42fa-a4b1-8852135a766f">
 Clearly, there are still a lot of outliers and false values (very big houses with cheap prices). So let's make a box and whisker plots for price and house size.
+
 ```R
 #boxplot dist of prices
 realtor_data_new %>%
