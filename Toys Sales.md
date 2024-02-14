@@ -137,7 +137,7 @@ SELECT
     Stores.StoreID,
     Stores.Store_name,
     CONCAT(Stores.store_location, " ", Stores.store_city) as store_full_location,
-    SUM(Sales.units * Products.product_price) / DATEDIFF(MAX(Sales.date), MIN(Sales.date)) * 30 as average_revenue_per_month
+    ROUND(SUM(Sales.units * Products.product_price) / DATEDIFF(MAX(Sales.date), MIN(Sales.date)) * 30 , 2) as average_revenue_per_month
 FROM Stores
 RIGHT JOIN Sales ON Stores.StoreID = Sales.StoreID
 LEFT JOIN Products ON Sales.ProductID = Products.ProductID
