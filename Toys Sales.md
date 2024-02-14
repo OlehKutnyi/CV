@@ -1,5 +1,34 @@
 # Stores sales
-This project doesn't really have anything specific to discover. It is created just to practice my SQL and Tableau skills. The project is based on the dataset Maven Toys and their sales in different shops. The Schema consists of four tables: Products (product, product name, product category, product cost product price); Inventory (ProductID, StoreID, stock on hand); Stores (StoreID, store name, store city, store location, store open date); Sales(SaleID, date, StoreID, ProductID, units)
+The purpose of this project is to analyse the sales of toys and similar products in a big store network. It is created to demonstrate and practice my SQL and Tableau skills. The project is based on the dataset Maven Toys and their sales in different shops. The Schema consists of four tables: **Products** (product id, product name, product category, product cost product price); **Inventory** (ProductID, StoreID, stock on hand); **Stores** (StoreID, store name, store city, store location, store open date); **Sales** (SaleID, date, StoreID, ProductID, units)
+
+### Products
+| Product ID | Product name    | Product category | Product cost | Product price |
+|------------|-----------------|------------------|--------------|---------------|
+| 1          | Action Figure   | Toys             |  9.99        | 15.99         |
+| 2          | Animal Figures  | Art & Crafts     |  1.99        | 3.99          |
+| 3          | Barrel O' Slime | Games            |  7.99        | 9.99          |
+
+### Inventory
+| Store ID  | Product ID | stock on hand |
+|-----------|------------|---------------|
+| 1         | 1          | 27            |
+| 1         | 2          | 0             |
+| 1         | 3          | 32            |
+
+### Stores
+| Store ID |    Store name             | Store city   | Store location | Store open date |
+|----------|---------------------------|--------------|----------------|-----------------|
+| 1        | Maven Toys Guadalajara 1  | Guadalajara  | Residential    | 1992-09-18      |
+| 2        | Maven Toys Monterrey 1    | Monterrey    | Residential    | 1995-04-27      |
+| 3        | Maven Toys Guadalajara 2  | Guadalajara  | Commercial     | 1999-12-27      |
+
+### Sales
+| Sale ID | Date       | Store ID | Product ID | Units |
+|---------|------------|----------|------------|-------|
+| 1       | 2022-01-01 | 24       | 4          | 1     |
+| 2       | 2022-01-01 | 28       | 1          | 2     |
+| 3       | 2022-01-01 | 6        | 8          | 1     |
+
 
 ## Querries
 
