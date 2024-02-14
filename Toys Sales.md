@@ -87,6 +87,6 @@ RIGHT JOIN Sales ON Stores.StoreID = Sales.StoreID
 LEFT JOIN Products ON Sales.ProductID = Products.ProductID
 GROUP BY Stores.StoreID;
 ```
-<img width="1059" alt="Знімок екрана 2024-01-26 о 00 28 06" src="https://github.com/OlehKutnyi/CV/assets/150731232/9a4091ae-f7cb-4bbf-a9be-5f7a4aaa71da">
-<img width="1023" alt="Знімок екрана 2024-01-26 о 00 27 56" src="https://github.com/OlehKutnyi/CV/assets/150731232/888a5bee-c5dd-41db-86c0-ff42eb8b691c">
+<img width="1440" alt="Знімок екрана 2024-02-05 о 21 58 50" src="https://github.com/OlehKutnyi/CV/assets/150731232/88b37d82-1e9d-4dec-a1dc-e448cae0a425">
+
 
