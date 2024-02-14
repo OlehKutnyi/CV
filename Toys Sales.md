@@ -1,5 +1,5 @@
 # Stores sales
-The purpose of this project is to analyse the sales of toys and similar products in a big store network. It is created to demonstrate and practice my SQL and Tableau skills. The project is based on the dataset Maven Toys and their sales in different shops. The Schema consists of four tables: **Products** (product id, product name, product category, product cost product price); **Inventory** (ProductID, StoreID, stock on hand); **Stores** (StoreID, store name, store city, store location, store open date); **Sales** (SaleID, date, StoreID, ProductID, units)
+The purpose of this project is to analyse the sales of toys and similar products in a big store network. It is created to demonstrate and practice my SQL and Tableau skills. The project is based on the dataset [Mexico Toys](https://www.kaggle.com/datasets/mysarahmadbhat/toy-sales) and their sales in different shops. The Schema consists of four tables: **Products** (product id, product name, product category, product cost product price); **Inventory** (ProductID, StoreID, stock on hand); **Stores** (StoreID, store name, store city, store location, store open date); **Sales** (SaleID, date, StoreID, ProductID, units)
 
 ### Products
 | Product ID | Product name    | Product category | Product cost | Product price |
