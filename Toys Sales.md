@@ -44,7 +44,8 @@ GROUP BY Products.product_category
 ORDER BY SUM(Sales.units) DESC;
 ```
 
-<img width="480" alt="Знімок екрана 2024-01-18 о 18 09 43" src="https://github.com/OlehKutnyi/CV/assets/150731232/681007fe-f929-4f51-b218-7b87f4063eee">
+<img width="525" alt="Знімок екрана 2024-02-14 о 21 59 39" src="https://github.com/OlehKutnyi/CV/assets/150731232/e6cef752-7b8b-47ab-a54b-ed4261bd400e">
+
 
 Then I found the category with the highest average margin
 
@@ -56,24 +57,44 @@ FROM Products
 GROUP BY product_category
 ORDER BY margin DESC;
 ```
-<img width="366" alt="Знімок екрана 2024-01-18 о 18 12 33" src="https://github.com/OlehKutnyi/CV/assets/150731232/5a97bf9c-62d2-46e8-b954-5e162db386ac">
+
+<img width="368" alt="Знімок екрана 2024-02-14 о 22 00 15" src="https://github.com/OlehKutnyi/CV/assets/150731232/40c45191-a855-4b9d-a016-35cdfa360f3f">
+
 
 Looks like electronics should be very profitable as it has both high sales and the highest margin.
 
-Cities with high sales
+Cities with high sales in comparison to the cities with lowest sales
 
 ```SQL
+WITH city_sales AS (
+    SELECT
+        Stores.store_city,
+        SUM(Sales.units) AS total_units_sold
+    FROM Stores
+    RIGHT JOIN Sales ON Stores.StoreID = Sales.StoreID
+    GROUP BY Stores.store_city
+)
+, ranked_cities AS (
+    SELECT
+        store_city,
+        total_units_sold,
+        RANK() OVER (ORDER BY total_units_sold DESC) AS rank_high,
+        RANK() OVER (ORDER BY total_units_sold ASC) AS rank_low
+    FROM city_sales
+)
 SELECT
-    Stores.store_city,
-    SUM(Sales.units) AS city_sales
-FROM Stores
-JOIN Sales ON Stores.StoreID = Sales.StoreID
-GROUP BY Stores.store_city
-ORDER BY city_sales DESC
+    rc_high.store_city AS best_cities,
+    rc_high.total_units_sold AS city_sales_top,
+    rc_low.store_city AS worst_cities,
+    rc_low.total_units_sold AS city_sales_bottom
+FROM ranked_cities AS rc_high
+JOIN ranked_cities AS rc_low ON rc_high.rank_high = rc_low.rank_low
+ORDER BY rc_low.total_units_sold ASC
 LIMIT 10;
 ```
 
-<img width="369" alt="Знімок екрана 2024-01-18 о 18 14 50" src="https://github.com/OlehKutnyi/CV/assets/150731232/a6f1df42-f835-4f50-8de6-ea99f106fd17">
+<img width="807" alt="Знімок екрана 2024-02-14 о 22 02 21" src="https://github.com/OlehKutnyi/CV/assets/150731232/7e7e43d8-fc51-4515-abed-10f7162a9e8e">
+
 
 All time profit from all shops. 
 ```SQL
@@ -88,7 +109,7 @@ SELECT
 FROM Sales
 LEFT JOIN product_margin ON Sales.ProductID = product_margin.ProductID;
 ```
-**Profit = 373368.00**
+**Profit = 4014029.00**
 
 Last month's sales of every shop
 ```SQL
@@ -101,7 +122,9 @@ WHERE Sales.Date BETWEEN (SELECT MAX(Date) - INTERVAL 30 DAY FROM Sales) AND (SE
 GROUP BY Stores.StoreID
 ORDER BY TotalUnitsSold DESC;
 ```
-<img width="367" alt="Знімок екрана 2024-01-18 о 18 19 13" src="https://github.com/OlehKutnyi/CV/assets/150731232/c43451d7-780d-47b3-b4ed-40cd33a35276">
+
+<img width="368" alt="Знімок екрана 2024-02-14 о 22 03 56" src="https://github.com/OlehKutnyi/CV/assets/150731232/67f41d96-c73b-4eba-a051-c8a864d0bd39">
+
 
 I've also calculated the average revenue per store
 
@@ -116,6 +139,7 @@ RIGHT JOIN Sales ON Stores.StoreID = Sales.StoreID
 LEFT JOIN Products ON Sales.ProductID = Products.ProductID
 GROUP BY Stores.StoreID;
 ```
-<img width="1440" alt="Знімок екрана 2024-02-05 о 21 58 50" src="https://github.com/OlehKutnyi/CV/assets/150731232/88b37d82-1e9d-4dec-a1dc-e448cae0a425">
+<img width="1049" alt="Знімок екрана 2024-02-14 о 22 04 57" src="https://github.com/OlehKutnyi/CV/assets/150731232/09301d37-57fc-43ff-8bb2-4742adb93e0a">
+
 
 
