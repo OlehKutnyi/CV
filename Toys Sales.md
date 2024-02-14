@@ -7,6 +7,7 @@ The purpose of this project is to analyse the sales of toys and similar products
 | 1          | Action Figure   | Toys             |  9.99        | 15.99         |
 | 2          | Animal Figures  | Art & Crafts     |  1.99        | 3.99          |
 | 3          | Barrel O' Slime | Games            |  7.99        | 9.99          |
+| ...        | ...             | ...              | ...          | ...           |
 
 ### Inventory
 | Store ID  | Product ID | stock on hand |
@@ -14,6 +15,7 @@ The purpose of this project is to analyse the sales of toys and similar products
 | 1         | 1          | 27            |
 | 1         | 2          | 0             |
 | 1         | 3          | 32            |
+| ...       | ...        | ...           |
 
 ### Stores
 | Store ID |    Store name             | Store city   | Store location | Store open date |
@@ -21,6 +23,7 @@ The purpose of this project is to analyse the sales of toys and similar products
 | 1        | Maven Toys Guadalajara 1  | Guadalajara  | Residential    | 1992-09-18      |
 | 2        | Maven Toys Monterrey 1    | Monterrey    | Residential    | 1995-04-27      |
 | 3        | Maven Toys Guadalajara 2  | Guadalajara  | Commercial     | 1999-12-27      |
+| ...      | ...                       | ...          | ...            | ...             |
 
 ### Sales
 | Sale ID | Date       | Store ID | Product ID | Units |
@@ -28,6 +31,7 @@ The purpose of this project is to analyse the sales of toys and similar products
 | 1       | 2022-01-01 | 24       | 4          | 1     |
 | 2       | 2022-01-01 | 28       | 1          | 2     |
 | 3       | 2022-01-01 | 6        | 8          | 1     |
+| ...     | ...        | ...      | ...        | ...   |
 
 
 ## Querries
