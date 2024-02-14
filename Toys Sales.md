@@ -143,7 +143,7 @@ RIGHT JOIN Sales ON Stores.StoreID = Sales.StoreID
 LEFT JOIN Products ON Sales.ProductID = Products.ProductID
 GROUP BY Stores.StoreID;
 ```
-<img width="1049" alt="Знімок екрана 2024-02-14 о 22 04 57" src="https://github.com/OlehKutnyi/CV/assets/150731232/09301d37-57fc-43ff-8bb2-4742adb93e0a">
 
+<img width="1047" alt="Знімок екрана 2024-02-14 о 22 55 22" src="https://github.com/OlehKutnyi/CV/assets/150731232/db861e0a-2d51-441d-b1bf-84a083837841">
 
 
