@@ -22,7 +22,7 @@ Development level has three categories developed, developing, and least develope
 
 ## Hypothesis and model
 H1: The impact of economic freedom on happiness in Western Europe is stronger than in other countries.                                      
-H2: The impact of economic freedom on happiness in highly developed countries is stronger than in developing and least developed countries. 
+H2: The impact of economic freedom on happiness in highly developed countries is stronger than in developing and least developed countries.  
 H3: Geopolitical region has a strong effect on the relationship between economic freedom and happiness.                                     
 H4: Development level has a strong effect on the relationship between economic freedom and happiness.
 
