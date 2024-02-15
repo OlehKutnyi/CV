@@ -26,7 +26,7 @@ Development level has three categories developed, developing, and least develope
 **H3:** Geopolitical region has a strong effect on the relationship between economic freedom and happiness.                                 
 **H4:** Development level has a strong effect on the relationship between economic freedom and happiness.
 
-Happiness = β0 + β1(Economic Freedom) + β2(Level of Development) + β3(Geopolitical Region) + β4(Economic Freedom * Level of Development) + β5(Economic Freedom * Geopolitical Region) + ε
+**Happiness** = β0 + β1(Economic Freedom) + β2(Level of Development) + β3(Geopolitical Region) + β4(Economic Freedom * Level of Development) + β5(Economic Freedom * Geopolitical Region) + ε
 
 This model allows us to assess how economic freedom impacts happiness, whether the level of development and geopolitical region have independent effects, and how the relationship between economic freedom and happiness varies across different levels of development and geopolitical culture contexts.
 
