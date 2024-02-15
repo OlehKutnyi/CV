@@ -146,4 +146,7 @@ GROUP BY Stores.StoreID;
 
 <img width="1047" alt="Знімок екрана 2024-02-14 о 22 55 22" src="https://github.com/OlehKutnyi/CV/assets/150731232/db861e0a-2d51-441d-b1bf-84a083837841">
 
+<img width="1440" alt="Знімок екрана 2024-02-05 о 21 58 50" src="https://github.com/OlehKutnyi/CV/assets/150731232/3309a9a7-17a4-43d4-a826-c81b5cbf9eef">
+
+
 
