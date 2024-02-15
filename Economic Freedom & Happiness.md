@@ -115,7 +115,7 @@ plot_region <- ggplot(data = selected_data,  aes(x = econ_freedom_index, y = hap
 <img width="1440" alt="Знімок екрана 2024-01-18 о 16 04 22" src="https://github.com/OlehKutnyi/CV/assets/150731232/ef4647d6-7bb6-424b-bd58-0ea4df42bfa4">
 
 
-Clearly, the developed countries are happier (which is pretty obvious) and Western Europe is happier than Africa, which is basically the same statement. Nothing new but now I have more trust in my dataset and it once again proved the positive relationship between EF and happiness.
+Clearly, the developed countries are happier (which is pretty obvious), and there is also clustering based on geopolitical groups, however, it is similar to the previous graph Western Europe/Developed (basically the same countries) countries at the top and underdeveloped/Africa at the bottom. Nothing new but now I have more trust in my dataset and it once again proved the positive relationship between EF and happiness.
 
 
 ## Analysis
@@ -153,7 +153,7 @@ To sum up, economic freedom is important for happiness in every country, in othe
 Despite some limitations and slightly controversial results, the analysis manages to prove two hypotheses (H1, H3) related to the regional effect. However, there is not enough evidence to accept H2 and H4, thus, one should conclude that there is no difference in the effect of economic freedom on happiness among countries with different levels of development.
 
 
-### In case you want this a paper with all details and references use the link:
+### In case you want to see this a paper with all details and references use the link:
 https://mpra.ub.uni-muenchen.de/119620/
 
 
