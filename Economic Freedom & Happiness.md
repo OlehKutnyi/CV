@@ -1,26 +1,26 @@
 # Economic Freedom and Happiness
 
 ## Description
-Economists believe that economic freedom (EF) has a strong positive effect on subjective well-being (happiness). I was curious whether this relationship is affected by the country's culture, which is the result of its history. I was especially interested in post-Soviet countries. The classical geopolitical groups like Western Europe, the Middle East and post-Soviet states are pretty good for this analysis. I also add the development level to the analysis. I hoped that the effect of increasing EF would have a stronger effect in Western Europe than in post-Soviet countries because of their history. 
+Economists believe that economic freedom (EF) has a  positive effect on subjective well-being (happiness). I was curious whether this relationship is affected by the country's culture, which is the result of its history. I was especially interested in post-Soviet countries. The classical geopolitical groups like Western Europe, the Middle East and post-Soviet states are pretty good for this analysis. I've also added the development level to the analysis. I hoped that the effect of increasing EF would have a stronger effect in Western Europe than in post-Soviet countries because of their communist past. 
 
 ## Variables
 Economic freedom refers to the ability of individuals and businesses to make economic choices and decisions without government intervention or excessive restrictions. It is often used to describe the degree to which an economy allows for voluntary and market-driven economic activities to take place. Scale of measurement 1 to 100.
 
 In turn, the happiness index is subjective, respondents are asked to rate their life satisfaction on a 1 to 10 scale.
 
-The development level has six categories: post-Soviet, Western Europe, Sub-Saharan Africa, Latin America and Caribbean, Central and Eastern Europe, Asia and the rest of the countries in the “Other” category. Some potential categories here are omitted because of the lack of data or different factors that might have a significant effect on the dependent variable. 
+The geopolitical group has six categories: post-Soviet, Western Europe, Sub-Saharan Africa, Latin America and Caribbean, Central and Eastern Europe, Asia and the rest of the countries in the “Other” category. Some potential categories here are omitted because of the lack of data or different factors that might have a significant effect on the dependent variable. 
 
 Development level has three categories developed, developing, and least developed.
 
 ## Hypothesis and model
-H1:The impact of economic freedom on happiness in Western Europe is stronger than in other countries.
+H1: The impact of economic freedom on happiness in Western Europe is stronger than in other countries.
 H2: The impact of economic freedom on happiness in highly developed countries is stronger than in developing and least developed countries. 
 H3: Geopolitical region has a strong effect on the relationship between economic freedom and happiness. 
 H4: Development level has a strong effect on the relationship between economic freedom and happiness.
 
 Happiness = β0 + β1(Economic Freedom) + β2(Level of Development) + β3(Geopolitical Region) + β4(Economic Freedom * Level of Development) + β5(Economic Freedom * Geopolitical Region) + ε
 
-This model allows to assess how economic freedom impacts happiness, whether the level of development and geopolitical region have independent effects, and how the relationship between economic freedom and happiness varies across different levels of development and geopolitical culture contexts.
+This model allows us to assess how economic freedom impacts happiness, whether the level of development and geopolitical region have independent effects, and how the relationship between economic freedom and happiness varies across different levels of development and geopolitical culture contexts.
 
 ## Creating the data set
 ```R
