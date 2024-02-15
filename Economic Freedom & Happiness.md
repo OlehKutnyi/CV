@@ -14,17 +14,9 @@ Development level has three categories developed, developing, and least develope
 
 |     Variable      | Values                           | Description                                                              |
 |-------------------|----------------------------------|--------------------------------------------------------------------------|
-| Economic freedom  | 1 - 100                          | The ability of individuals and businesses to make economic choices and   |
-|                   |                                  | decisions without government intervention or excessive restrictions      |
-| Happiness index   | 1 - 10                           | The happiness index is subjective, respondents are asked to rate their   |
-|                   |                                  | life satisfaction on a 1 to 10 scale                                     |
-| Geopolitical group| Western Europe                   |                                                                          |
-|                   | post-Sovies                      |                                                                          |
-|                   | Sub-Saharan Africa               |                                                                          |      
-|                   | Latin America and the Caribbean  |                                                                          |
-|                   | Central & Eastern Europe         |                                                                          |
-|                   | Asia                             |                                                                          |
-|                   | Others                           |                                                                          |
+| Economic freedom  | 1 - 100                          | The ability of individuals and businesses to make economic choices and decisions without government intervention or excessive restrictions |
+| Happiness index   | 1 - 10                           | The happiness index is subjective, respondents are asked to rate their life satisfaction on a 1 to 10 scale |
+| Geopolitical group| Western Europe, post-Sovies, Sub-Saharan Africa, Latin America and the Caribbean, Central & Eastern Europe, Asia, Others |       |
           
 
 ## Hypothesis and model
