@@ -14,7 +14,7 @@ Hi! Welcome to my GitHub here you can find my resume and projects. Currently, Iâ
 - Tableau
 - R
 - Statistics/regression analysis (OLS, IVreg, Probit, Logit, etc.)
-- Python(but not for data analysis)
+- Python basics(but not for data analysis)
 - Git
 
 ## ðŸ“šEducation
