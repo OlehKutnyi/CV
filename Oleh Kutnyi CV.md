@@ -12,9 +12,9 @@ Hi! Welcome to my GitHub here you can find my resume and projects. Currently, Iâ
 - MS Excel
 - SQL
 - Tableau
-- R
+- R / Python (Pandas, numpy)
 - Statistics/regression analysis (OLS, IVreg, Probit, Logit, etc.)
-- Python basics(but not for data analysis)
+- Machine Learning basics (Decision trees, feed-forward neural network, K-means) 
 - Git
 
 ## ðŸ“šEducation
@@ -33,7 +33,7 @@ Hi! Welcome to my GitHub here you can find my resume and projects. Currently, Iâ
 - Studies the effect of a countryâ€™s culture on the relationship between economic freedom and happiness.
 - [Link for the published paper](https://mpra.ub.uni-muenchen.de/119620/)
 
-### [Toys sales (SQl & Tableau)](https://github.com/OlehKutnyi/CV/blob/main/Economic%20Freedom%20%26%20Happiness.md)
+### [Toys sales (SQl & Tableau)](https://github.com/OlehKutnyi/CV/blob/main/Toys%20Sales.md)
 - SQL
 - Tableau
 - Analysing the dataset about products, stores and sales. 
