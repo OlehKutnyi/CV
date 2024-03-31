@@ -12,6 +12,7 @@ Hi! Welcome to my GitHub here you can find my resume and projects. Currently, Iâ
 - SQL
 - MS Excel
 - Tableau
+- A/B tests
 - R / Python (Pandas, numpy)
 - Statistics/regression analysis (OLS, IVreg, Probit, Logit, etc.)
 - Machine Learning basics (Decision trees, feed-forward neural network, K-means) 
