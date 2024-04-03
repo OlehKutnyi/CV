@@ -1,24 +1,24 @@
 # Oleh Kutnyi - Junior Data Analyst
 
 ## ☎️Contact inforamtion
--  +380 (67) 67 986 02
+- +380 (67) 67 986 02
 - Telegram [@OlehKutnyi](https://t.me/OlehKutnyi)
 - e-mail okutnyi@gmail.com
 
 ## 📄Summary
-Hi! Welcome to my GitHub here you can find my resume and projects. Currently, I’m a third-year student at Kyiv School of Economics(KSE). Apart from economics, my studying in university was mainly connected to math and working with data. I had courses like Statistics & Probability, Regression Analysis, Econometrics, Data Preparation and Visualisation on R, etc. I am also a fan of the scientific data-driven approach in life and business; that's why I want to begin my career as a data analyst. Unfortunately, I don’t have any real working experience in the field, however, I’ve done several projects at university and created a simple project in SQL & Tableau to show some of my skills. 
+Hi! Welcome to my GitHub here you can find my resume and projects. Currently, I’m a third-year student at Kyiv School of Economics(KSE). Apart from economics, my studying in university was mainly connected to math and working with data. I had courses like Statistics & Probability, Regression Analysis, Econometrics, Data Preparation and Visualisation on R, etc. I am also a fan of the scientific data-driven approach in life and business; that's why I want to begin my career as a data analyst. Unfortunately, I don’t have any real working experience in the field, however, I’ve done several projects at university and created a simple project in SQL & Tableau to show some of my skills. I'm also currently learning Python (NumPy, Pandas) within my "Intro to AI" (basic ML algorithms) course in the KSE.
 
 ## 🎯Key Skills
 - SQL
 - MS Excel
 - Tableau
-- R / Python (Pandas, numpy)
+- R / Python (Pandas, NumPy)
 - Statistics/regression analysis (OLS, IVreg, Probit, Logit, etc.)
-- Machine Learning basics (Decision trees, feed-forward neural network, K-means) 
+- Understanding of product metrics 
 
 ## 📚Education
 - **Kyiv School of Economics (KSE) & University of Houston** - [Business Economics]
-- **Several courses for data analytics**
+- **Several online courses for data analytics**
   - Coursera 
   - PlanetScale (SQL)
   - Harvard CS50 (SQL)
