@@ -161,7 +161,7 @@ To sum up, economic freedom is important for happiness in every country, in othe
 Despite some limitations and slightly controversial results, the analysis manages to prove two hypotheses (H1, H3) related to the regional effect. However, there is not enough evidence to accept H2 and H4, thus, one should conclude that there is no difference in the effect of economic freedom on happiness among countries with different levels of development.
 
 
-### In case you want to see this a paper with all details and references use the link:
+### In case you want to see this paper with all the details and references use the link:
 https://mpra.ub.uni-muenchen.de/119620/
 
 
