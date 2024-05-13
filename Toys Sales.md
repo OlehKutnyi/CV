@@ -34,6 +34,59 @@ The purpose of this project is to analyse the sales of toys and similar products
 | ...     | ...        | ...      | ...        | ...   |
 
 
+## Creating the tables
+
+In this case I've created the tables with pretty small data types. This is because I knew that the data will not be updated. In the real life, however, one should of course consider different data types, especially, for primary keys.
+
+```SQL
+DROP TABLE IF EXISTS Products;
+CREATE TABLE Products (
+    ProductID SMALLINT UNSIGNED PRIMARY KEY,
+    product_name VARCHAR(50),
+    product_category VARCHAR(50),
+    product_cost VARCHAR(10),
+    product_price VARCHAR(10)
+);
+
+DROP TABLE IF EXISTS Inventory;
+CREATE TABLE Inventory (
+    StoreID SMALLINT UNSIGNED,
+    ProductID SMALLINT UNSIGNED,
+    stock_on_hand SMALLINT UNSIGNED,
+    FOREIGN KEY(ProductID) REFERENCES Products(ProductID),
+    FOREIGN KEY(StoreID) REFERENCES Stores(StoreID)
+);
+
+DROP TABLE IF EXISTS Stores;
+CREATE TABLE Stores (
+    StoreID SMALLINT UNSIGNED PRIMARY KEY,
+    store_name VARCHAR(60),
+    store_city VARCHAR(50),
+    store_location VARCHAR(50),
+    store_open_date DATE
+);
+
+DROP TABLE IF EXISTS Sales;
+CREATE TABLE Sales (
+    SaleID INT UNSIGNED PRIMARY KEY,
+    Date DATE,
+    StoreID SMALLINT UNSIGNED,
+    ProductID SMALLINT UNSIGNED,
+    units SMALLINT UNSIGNED,
+    FOREIGN KEY (StoreID) REFERENCES Stores(StoreID),
+    FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
+);
+
+UPDATE Products
+SET product_cost = REPLACE(product_cost, '$', ''),
+    product_price = REPLACE(product_price, '$', '');
+
+ALTER TABLE Products
+    MODIFY COLUMN product_cost DECIMAL(5,2),
+    MODIFY COLUMN product_price DECIMAL(5,2);
+```
+
+
 ## Querries
 
 Firstly I decided to find sales by category. 
