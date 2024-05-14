@@ -13,7 +13,7 @@ Hi! Welcome to my GitHub here you can find my resume and projects. Currently, Iâ
 - SQL
 - MS Excel
 - Tableau
-- R / Python (Pandas, NumPy)
+- R / Python (Pandas, NumPy, matplotlib)
 - Statistics and probability
 - Regression analysis (OLS, IVreg, Probit, Logit, etc.)
 - English (B2 - C1)
