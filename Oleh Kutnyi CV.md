@@ -21,7 +21,7 @@ Hi! Welcome to my GitHub here you can find my resume and projects. Currently, Iâ
 ## ðŸ“šEducation
 - **Kyiv School of Economics (KSE) & University of Houston** - [Business Economics]
 - **Several online courses for data analytics**
-  - Coursera 
+  - Coursera (SQL, Python, A/B testing)
   - PlanetScale (SQL)
   - Harvard CS50 (SQL)
   - Genesis Analytics Guide
