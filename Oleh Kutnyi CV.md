@@ -14,6 +14,7 @@ Hi! Welcome to my GitHub here you can find my resume and projects. Currently, Iâ
 - MS Excel
 - Tableau
 - R / Python (Pandas, NumPy, matplotlib)
+- A/B testing
 - Statistics and probability
 - Regression analysis (OLS, IVreg, Probit, Logit, etc.)
 - English (B2 - C1)
