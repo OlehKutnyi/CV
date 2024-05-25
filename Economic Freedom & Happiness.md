@@ -59,6 +59,7 @@ levels(selected_data$regional_indicator)[levels(selected_data$regional_indicator
 levels(selected_data$regional_indicator)
 
 
+#Below is not the most efficient way of dividing countries into groups, but there is no good dataset to make it better
 developed_countries <- c(
   "Andorra", "Australia", "Austria", "Belgium", "Canada", "Cyprus",
   "Czech Republic", "Denmark", "Estonia", "Finland", "France", "Germany",
